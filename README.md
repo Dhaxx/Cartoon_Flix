@@ -1,2 +1,2 @@
-# Cartoon_Flix
-Criação de uma aplicação baseada na interface da Netflix
+# CartoonFlix
+Project of a streaming platform based on the netflix interface
