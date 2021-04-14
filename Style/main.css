@@ -1,6 +1,9 @@
 :root {
+    --azul: #032541;
+    --amarelo: #f3d61d;
     --branco: #F0FFF0;
     --preta: #141414;
+    --fundo: #B0E0E6;
 }
 
 
@@ -11,9 +14,13 @@
     text-decoration: none;
 } 
 
+/*Elementos Base*/
+
 body {
-    background: var(--branco);
-    font-family:sans-serif
+    background: var(--fundo);
+    font-family:sans-serif;
+    color: var(--branco) ;
+    font-size: 14px;
 }
 
 
@@ -22,25 +29,50 @@ header .container {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: var(--preta);
+    background: var(--azul);
 }
 
 header .logo {
-    color: var(--branco);
+    color: var(--amarelo);
     font-family: 'Arial Black', Times;
     font-size: 40px;
     margin-left: 5px;
 }
 
 header nav a {
-    color: #AAA;
+    font-family: 'Arial';
+    color: var(--branco);
     margin-right: 10px;
 
 }
 
 header nav a:hover {
-    color: var(--branco);
-    border-bottom: solid 3px var(--branco);
+    color: var(--amarelo);
+    border-bottom: solid 3px var(--amarelo);
     padding-bottom: 17px;
+}
+
+/*Desenho Principal*/
+
+.desenho-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgb(0, 57, 110)100%),  url('/resources/capa-caverna.jpg');
+
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.desenho-principal .descricao {
+    margin-bottom: 40px;
+}
+
+.titulo {
+    font-size: 40px;
+    color: var(--amarelo);
 }
 
