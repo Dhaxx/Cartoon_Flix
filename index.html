@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./Style/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Owl CSS-->
+    <link rel="stylesheet" href="Style/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="Style/Owl/owl.theme.default.min.css">
+
+
     <title>CartoonFlix</title>
 </head>
 <body>
@@ -27,16 +33,59 @@
             </div>
             <div class="botoes">
                 <button role="button" class="botao">
+                    <i id="play" class="fas fa-play"></i>
                     ASSISTIR AGORA
                 </button>
                 <button role="button" class="botao">
+                    <i id="pontos" class="fas fa-ellipsis-h"></i>
                     VER MAIS
                 </button>
-                <button>
-                    +
+                <button role="checkbox" class="botao">
+                    <i class="fas fa-plus"></i>
                 </button>
             </div>
         </div>
     </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+           <div class="item">
+               <img class="box-desenho" src="resources/mini1.jpg" alt="" srcset="">
+           </div>
+           <div class="item">
+               <img class="box-desenho" src="resources/mini2.jpg" alt="" srcset="">
+           </div>
+           <div class="item">
+               <img class="box-desenho" src="resources/mini3.jpg" alt="" srcset="">
+           </div>
+           <div class="item">
+               <img class="box-desenho" src="resources/mini4.jpg" alt="" srcset="">
+           </div>
+           <div class="item">
+               <img class="box-desenho" src="resources/mini5.jpg" alt="" srcset="">
+           </div>
+           <div class="item">
+               <img class="box-desenho" src="resources/mini6.jpg" alt="" srcset="">
+           </div>
+           <div class="item">
+               <img class="box-desenho" src="resources/mini7.jpg" alt="" srcset="">
+           </div>
+           <div class="item">
+               <img class="box-desenho" src="resources/mini8.jpg" alt="" srcset="">
+           </div>
+           <div class="item">
+               <img class="box-desenho" src="resources/mini9.jpg" alt="" srcset="">
+           </div>
+           <div class="item">
+               <img class="box-desenho" src="resources/mini10.jpg" alt="" srcset="">
+           </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/637f9334ae.js" crossorigin="anonymous"></script>
+    <script src="js/Owl/jquery.min.js"></script>
+    <script src="js/Owl/owl.carousel.min.js"></script>
+    <script src="js/Owl/main.js"></script>
+
 </body>
 </html>
