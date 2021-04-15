@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="./Style/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Responsividade-->
+    <link rel="stylesheet" href="Style/responsive.css">
+
     <!--Owl CSS-->
     <link rel="stylesheet" href="Style/Owl/owl.carousel.min.css">
     <link rel="stylesheet" href="Style/Owl/owl.theme.default.min.css">
@@ -17,8 +20,8 @@
         <div class="container">
             <h2 class="logo">CARTOONFLIX</h2>
             <nav>
-                <a href="#">Início</a>
-                <a href="#">Anos 80</a>
+                <a href="#inicio">Início</a>
+                <a href="#categoria">Novos</a>
                 <a href="#">Anos 90</a>
                 <a href="#">Anos 2000</a>
             </nav>
@@ -26,28 +29,37 @@
     </header>
 
     <main>
-        <div class="desenho-principal">
+        <div class="desenho-principal" id="inicio">
             <div class="container">
                 <h3 class="titulo">CAVERNA DO DRAGÃO</h3>
-                <p class="descricao">Seis crianças embarcam numa montanha russa e acabam parando no Reino de Dungeons and Dragons, a Caverna do Dragão. Para receber aos perigos daquela terra mágica, elas recebem seis Armas do Poder: Hank, um arco de flechas magnéticas; Eric, um poderoso escudo; Diana, um bastão para acrobacias; Sheila, um capuz de invisibilidade; Presto, um chapéu de feiticeiro; e Bobby, um tacape superpoderoso. Com a ajuda do Mestre dos Magos, eles tentarão encontrar um caminho de volta para casa; mas não poderão contar com ele para combater o maligno Vingador e o dragão de cinco cabeças Tiamat.</p>
+                <p class="descricao">Seis crianças embarcam numa montanha russa e acabam parando no Reino de Dungeons and Dragons, a Caverna do Dragão. Com a ajuda do Mestre dos Magos, eles tentarão encontrar um caminho de volta para casa; mas não poderão contar com ele para combater o maligno Vingador e o dragão de cinco cabeças Tiamat.</p>
             </div>
             <div class="botoes">
-                <button role="button" class="botao">
-                    <i id="play" class="fas fa-play"></i>
-                    ASSISTIR AGORA
-                </button>
-                <button role="button" class="botao">
-                    <i id="pontos" class="fas fa-ellipsis-h"></i>
-                    VER MAIS
-                </button>
-                <button role="checkbox" class="botao">
+                <a target="_blank" href="//www.youtube.com/watch?v=W8He59-zDaQ">
+                    <button role="button" class="botao">
+                        <i id="play" class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                </a>
+                <a target="_blank" href="https://www.themoviedb.org/tv/553-dungeons-dragons?language=pt-BR">
+                    <button role="button" class="botao">
+                        <i id="pontos" class="fas fa-ellipsis-h"></i>
+                        VER MAIS
+                    </button>
+                </a>
+                <button role="checkbox" class="botao" id="mais">
                     <i class="fas fa-plus"></i>
+                    ADCIONAR A LISTA
                 </button>
             </div>
         </div>
     </main>
 
-    <div class="carrosel-filmes">
+    <div id="categoria">
+        <h4 class="add-recentemente">Adcionados recentemente</h4>
+    </div>
+
+    <div class="carrossel-filmes">
         <div class="owl-carousel owl-theme">
            <div class="item">
                <img class="box-desenho" src="resources/mini1.jpg" alt="" srcset="">
